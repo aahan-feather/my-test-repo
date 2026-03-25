@@ -12,7 +12,7 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-app.use('/health', healthRouter);
+app.use('/health-checker', healthRouter);
 app.use('/api/echo', echoRouter);
 app.use('/api/status', statusRouter);
 app.use('/api/info', infoRouter);
