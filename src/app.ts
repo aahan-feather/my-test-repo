@@ -3,6 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import healthRouter from './routes/health';
 import echoRouter from './routes/echo';
+import statusRouter from './routes/status';
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use('/health', healthRouter);
 app.use('/api/echo', echoRouter);
+app.use('/api/status', statusRouter);
 
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(404).json({ error: 'Not Found' });
