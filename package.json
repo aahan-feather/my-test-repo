@@ -1,6 +1,7 @@
 {
   "name": "my-test-repo",
   "version": "1.0.0",
+  "description": "A Node.js Express TypeScript REST API",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
